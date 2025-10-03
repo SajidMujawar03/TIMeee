@@ -4,7 +4,7 @@ let timer: NodeJS.Timer | null = null;
 let secondsLeft: number;
 let isWork: boolean;
 let paused: boolean;
-let controlPanel: vscode.WebviewPanel | null = null; // single control panel
+let controlPanel: vscode.WebviewPanel | null = null;
 
 // Durations in seconds
 let WORK_DURATION: number;
@@ -209,6 +209,8 @@ export function deactivate() {
     clearInterval(timer as any);
   }
 }
+
+
 function getControlPanelContent() {
   return `
   <!DOCTYPE html>

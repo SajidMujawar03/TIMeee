@@ -3,6 +3,7 @@
   "displayName": "timeee-timer",
   "description": "creating a timer extension for vscode",
   "version": "0.0.1",
+  "publisher": "SajidMujawar",
   "engines": {
     "vscode": "^1.104.0"
   },
